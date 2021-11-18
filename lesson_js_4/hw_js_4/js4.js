@@ -80,8 +80,14 @@
 
 // let mas = [
 //     {
-//        id: 43;
-//        name: "Leps";
-//        age:54;
+//         id: 43,
+//         name: "Leps",
+//         age: 54,
+//     }]
+//
+// function per(a) {
+//     for (const elemets of a) {
+//         document.write(`<div>${elemets.id},${elemets.name},${elemets.age} </div>`)
 //     }
-// ];
+// }
+// per(mas)
