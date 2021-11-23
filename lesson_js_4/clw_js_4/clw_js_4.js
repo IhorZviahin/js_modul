@@ -60,7 +60,7 @@
 //
 // function summa(a) {
 //     let chisla = 0;
-//     for (i = 0; i < mas.length; i++) {
+//     for (i = 0; i < a.length; i++) {
 //         chisla = chisla + a[i]
 //     }
 //     return chisla
@@ -74,15 +74,56 @@
 //
 // function summa(a) {
 //     let chisla = 0;
-//     for (i = 0; i < mas.length; i++) {
+//     for (let i = 0; i < a.length; i++) {
 //         chisla = (chisla + a[i]);
 //     }
-//     return chisla/ mas.length
+//     return chisla/ a.length
 // }
+//
 // let dfef = summa(mas)
 // console.log(dfef)
 
 // block7 створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+// function minmax() {
+// let minchislo = arguments[0];
+// let maxchislo = arguments[0];
+// for (let i = 0; i < arguments.length; i++) {
+//     if (minchislo < arguments[i]) {
+//         minchislo = arguments[i]
+//     }
+//     if (maxchislo > arguments[i]) {
+//         maxchislo = arguments[i]
+//     }
+// }
+// console.log(minchislo)
+// return maxchislo
+// }
+// let mmmm = minmax(3221, 21, 1223, 1, -423)
+// console.log(mmmm)
 
+// - створити функцію яка заповнює масив рандомними числами
+// function random(a) {
+//     let mas = [0];
+//     for (let i = 0; i < a; i++) {
+//         mas.push(Math.floor(Math.random() * 100));
+//     }
+//     return mas
+// }
+//
+// let vvv = random(3)
+// console.log(vvv)
 
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+// function random(a,l) {
+//     let mas = [0];
+//     for (let i = 0; i < l; i++) {
+//         mas.push(Math.floor(Math.random() * a));
+//     }
+//     return mas
+// }
+//
+// let vvv = random(44,5)
+// console.log(vvv)
+
+//- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
