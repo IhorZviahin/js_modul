@@ -126,4 +126,13 @@
 // console.log(vvv)
 
 //- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-
+function masminys(a) {
+    let mas = [];
+    for (let i = a.length - 1; i >= 0; i--) {
+        let b = a[i];
+        mas.push(b);
+    }
+    return mas;
+}
+let res = masminys([9876, 1, -786543])
+console.log(res)
