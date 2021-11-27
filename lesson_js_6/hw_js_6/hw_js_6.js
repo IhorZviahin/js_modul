@@ -55,7 +55,7 @@
 // }
 // let arr = stringToarray(str);
 // console.log(arr)
-
+//
 // let str = 'Каждый охотник желает знать';
 // console.log(str.split(" "));
 
@@ -65,20 +65,50 @@
 //     let str = 'Каждый охотник желает знать';
 // document.writeln(delete_characters(str, 7)); // Каждый
 
+// let str = 'Каждый охотник желает знать';
+// let substringone = (str, length) => {
+//     return str.substr(0, length);
+// }
+// let vv = substringone(str, 7)
+// console.log(vv)
 
+
+// let str = 'Каждый охотник желает знать';
+// let vvv  = str.substr(0,7);
+// console.log(vvv)
 
 
 //
 // block 7 - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
+
+// let str = "HTML JavaScript PHP";
 //
+// let insert_dash = (str) => str.replaceAll(' ', '-').toUpperCase()
+// let vv = insert_dash(str)
+// console.log(vv)
+
+
 // block 8 - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-//
-//
+
+// let str = "kjlea wfui3rwgr fvdhefd"
+// let toUpperCase_fist_s = (str) => {
+//     return str[0].toUpperCase() + str.slice(0) ;
+// }
+// let vv = toUpperCase_fist_s(str)
+// console.log(vv)
+
 //
 // bloc 9 - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
 
+// let str = "kjlea wfui3rwgr fvdhefd";
+//
+// let capitalize = (str) => {
+//     return str.split(" ").map(capitalize_=>capitalize_.charAt(0).toUpperCase() + capitalize_.slice(1)).join(" ");
+// }
+// let vv = capitalize(str);
+// console.log(vv)
 
 
 
