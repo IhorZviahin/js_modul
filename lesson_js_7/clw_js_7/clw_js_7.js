@@ -61,8 +61,6 @@
 // console.log(addDriver)
 
 
-
-
 // block 2
 // - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -134,3 +132,46 @@
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+function Cinderella(name, age, sizeleg) {
+    this.name = name;
+    this.age = age;
+    this.sizeleg = sizeleg;
+}
+
+let mas = [
+    new Cinderella('Ann', 18, 35),
+    new Cinderella('Iris', 16, 33),
+    new Cinderella('Amanda', 13, 36),
+    new Cinderella('Alice', 15, 37),
+    new Cinderella('Jenny', 20, 36),
+    new Cinderella('Jocelyn', 33, 39),
+    new Cinderella('Karen', 17, 34),
+    new Cinderella('Olivia', 13, 35),
+    new Cinderella('Marcia', 14, 36),
+    new Cinderella('Rosee', 19, 38),
+
+];
+console.log(mas);
+
+class Prince {
+    constructor(name, age, sizeleg) {
+        this.name = name;
+        this.age = age;
+        this.sizeleg = sizeleg;
+    }
+}
+
+let princec = new Prince("Oleg", 20, 44);
+console.log(princec);
+
+let search = (mas, Prince ) =>{
+    for(let i of mas){
+        if (i.age === princec.age)
+            return `${i.name} повинна бути з принцом`
+    }
+}
+console.log(search(mas,princec))
+
+let searchtwo = mas.find((i) => i.name.length === princec.name.length);
+console.log(searchtwo);
