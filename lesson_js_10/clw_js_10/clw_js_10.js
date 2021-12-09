@@ -2,16 +2,16 @@
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 //
-// let botton = document.getElementById("button");
-// botton.onclick = function (){
-//
-//     let value = document.forms.form_one.one.value;
-//     let value1 = document.forms.form_one.two.value;
-//
-//     let value2 = document.forms.form_two.one_two.value;
-//     let value3 = document.forms.form_two.two_two.value;
-//     console.log(value,value1,value2,value3)
-// }
+let botton = document.getElementById("button");
+botton.onclick = function (){
+
+    let value = document.forms.form_one.one.value;
+    let value1 = document.forms.form_one.two.value;
+
+    let value2 = document.forms.form_two.one_two.value;
+    let value3 = document.forms.form_two.two_two.value;
+    console.log(value,value1,value2,value3)
+}
 //
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
