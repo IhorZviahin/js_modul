@@ -17,9 +17,9 @@ btn.onclick = function () {
     let model = document.forms.inlocalsh.model.value;
     let type = document.forms.inlocalsh.type.value;
     let volume = document.forms.inlocalsh.volume.value;
-    let mas = [];
-    mas.push(model, type, volume);
-    localStorage.setItem('mas', JSON.stringify(mas));
+    let mass = [];
+    mass.push(model, type, volume);
+    localStorage.setItem('mass', JSON.stringify(mass));
 }
 
 
