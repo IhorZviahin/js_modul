@@ -41,7 +41,7 @@ fetch(`https://jsonplaceholder.typicode.com/comments`)
             div.classList.add('block2')
 
             h3.innerText = `${post.id}`;
-            p.innerText = `${post.email}`;
+            p.innerText = `${post.email} `;
 
             posts.append(h3,p)
             div.appendChild(posts)
