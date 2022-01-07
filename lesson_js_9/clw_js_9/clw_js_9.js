@@ -49,10 +49,12 @@
 //     let p = document.createElement('p')
 //     let img = document.createElement('img')
 //     div.classList.add('member');
+
 //     h1.innerText = `${i.name} ${i.surname}`;
 //     h3.innerText = `${i.age}`;
 //     p.innerText = `${i.info}`;
 //     img.src = `${i.photo}`
+
 //     div.append(h1, h3, p, img)
 //     divg.appendChild(div)
 //     document.body.appendChild(divg)
