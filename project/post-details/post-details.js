@@ -1,6 +1,6 @@
-let mas = localStorage.getItem('key2')
-let key2 = JSON.parse(mas)
-let keynum = Number(key2)
+let mas = localStorage.getItem('key')
+let key = JSON.parse(mas)
+let keynum = Number(key)
 
 fetch(`https://jsonplaceholder.typicode.com/posts`)
     .then(response => response.json())

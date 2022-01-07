@@ -62,6 +62,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                         .then(title => {
                             for (com of title) {
                                 if (keynum === com.userId) {
+                                    console.log(com);
                                     let comms = document.createElement('div');
                                     let btn2 = document.createElement('button');
                                     comms.classList.add('blockforpost')
@@ -70,7 +71,6 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 
                                     btn2.onclick = function () {
                                         window.location.href = 'file:///C:/Users/%D0%98%D0%B3%D0%BE%D1%80%D1%8C/WebstormProjects/js_modul/project/post-details/post-details.html'
-                                        localStorage.setItem('key2', JSON.stringify(`${com.userId}`))
                                     }
 
                                     comms.appendChild(btn2)
