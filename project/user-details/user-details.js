@@ -21,10 +21,21 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                 h32.innerText = `${fulluser.username}`;
                 h33.innerText = `${fulluser.email}`;
 
+                for (let addres of fulluser.address) {
+                    let div2 = document.createElement('div');
+                    let h34 = document.createElement('h3');
+                    let h35 = document.createElement('h3');
+                    let h36 = document.createElement('h3');
+                    let h37 = document.createElement('h3');
+
+                    // h34.innerText = `${addres}`
+
+                    div2.append(h34, h35, h36, h37);
+                    div.appendChild(div2);
+                }
 
 
-
-                posts.append(h1, h31, h32, h33)
+                posts.append(h1, h31, h32, h33);
                 div.appendChild(posts)
                 document.body.append(div);
             }
