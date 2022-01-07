@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block {
+    width: 45%;
+    background: #74e3d7;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}

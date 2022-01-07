@@ -30,12 +30,18 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
             let posts = document.createElement('div');
             let h3 = document.createElement('h3');
             let h4 = document.createElement('h4');
-            div.classList.add('block')
-
+            let btn = document.createElement('button');
+            div.classList.add('block');
+            btn.innerText = 'push';
             h3.innerText = `${user.id}`;
             h4.innerText = `${user.name} `;
 
-            posts.append(h3,h4)
+            btn.onclick = function () {
+                window.location.href = 'file:///C:/Users/%D0%98%D0%B3%D0%BE%D1%80%D1%8C/WebstormProjects/js_modul/project/user-details/user-details.html'
+                localStorage.setItem('key', JSON.stringify(`${user.id}`))
+            }
+
+            posts.append(h3, h4, btn)
             div.appendChild(posts)
             document.body.append(div);
         }
